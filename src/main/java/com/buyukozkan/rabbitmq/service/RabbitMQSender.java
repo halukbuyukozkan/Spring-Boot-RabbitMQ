@@ -21,7 +21,6 @@ public class RabbitMQSender {
 
     public void send(Employee company) {
         rabbitTemplate.convertAndSend(exchange, routingkey, company);
-        System.out.println("Send msg = " + company);
-
+        System.out.println("Gönderilen mesaj:" + company);
     }
 }
