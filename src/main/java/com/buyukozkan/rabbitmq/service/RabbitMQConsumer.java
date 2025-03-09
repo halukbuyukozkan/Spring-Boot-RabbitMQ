@@ -9,6 +9,6 @@ public class RabbitMQConsumer {
 
     @RabbitListener(queues = "${buyukozkan.rabbitmq.queue}")
     public void receivedMessage(Employee employee) {
-        System.out.println("RabbitMQ'dan gelen mesaj: " + employee);
+        System.out.println("Received message: " + employee);
     }
 }
